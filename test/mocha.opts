@@ -1,0 +1,3 @@
+-R mochawesome
+--recursive
+--compilers js:babel-register

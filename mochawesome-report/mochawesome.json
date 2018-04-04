@@ -1,0 +1,191 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-02-12T08:04:18.779Z",
+    "end": "2018-02-12T08:04:19.105Z",
+    "duration": 326,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "ded2d940-b5d7-4433-9da4-c3e7acc2bf1a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "5f38f134-058f-42fb-a6be-a2bb7ba5afbf",
+        "title": "api",
+        "fullFile": "/Users/liming/MySource/tools/test/api.test.js",
+        "file": "/test/api.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "get baidu information",
+            "fullTitle": "api get baidu information",
+            "timedOut": false,
+            "duration": 242,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request('https://www.baidu.com').get('/').expect(200).expect('Content-Type', /html/).end(function (err, res) {\n  expect(res).to.be.an('object');\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "22321a66-f193-49b6-9e42-c83b731dfdb0",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "22321a66-f193-49b6-9e42-c83b731dfdb0"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 242,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "13bce407-df69-40a2-8231-36fb6668fa5d",
+        "title": "regular.isIngeter",
+        "fullFile": "/Users/liming/MySource/tools/test/regular.test.js",
+        "file": "/test/regular.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test spec",
+            "fullTitle": "regular.isIngeter test spec",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal(_index2.default.reg.isIngeter(undefined), false);\nassert.equal(_index2.default.reg.isIngeter(null), false);\nassert.equal(_index2.default.reg.isIngeter(false), false);\nassert.equal(_index2.default.reg.isIngeter(true), false);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "fbab0f31-3f74-43e7-a4a2-8a9aebcf0a96",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "test right",
+            "fullTitle": "regular.isIngeter test right",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal(_index2.default.reg.isIngeter(0), true);\nassert.equal(_index2.default.reg.isIngeter(-99999999), true);\nassert.equal(_index2.default.reg.isIngeter(999999999999999999999), true);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "de43a261-305d-4bdd-81ba-48f455c53a8b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "fbab0f31-3f74-43e7-a4a2-8a9aebcf0a96",
+          "de43a261-305d-4bdd-81ba-48f455c53a8b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "2a8aa73c-1c6c-42d5-8968-7b585b12abfa",
+        "title": "regular.isPositiveInteger",
+        "fullFile": "/Users/liming/MySource/tools/test/regular.test.js",
+        "file": "/test/regular.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test spec",
+            "fullTitle": "regular.isPositiveInteger test spec",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal(_index2.default.reg.isIngeter(undefined), false);\nassert.equal(_index2.default.reg.isIngeter(null), false);\nassert.equal(_index2.default.reg.isIngeter(false), false);\nassert.equal(_index2.default.reg.isIngeter(true), false);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9c28ebdd-0df0-4716-bba7-3471029fc64a",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "test right",
+            "fullTitle": "regular.isPositiveInteger test right",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal(_index2.default.reg.isPositiveInteger(+0), true);\nassert.equal(_index2.default.reg.isPositiveInteger(0), true);\nassert.equal(_index2.default.reg.isPositiveInteger('+0'), true);\nassert.equal(_index2.default.reg.isPositiveInteger('0'), true);\nassert.equal(_index2.default.reg.isPositiveInteger('00'), false);\nassert.equal(_index2.default.reg.isPositiveInteger('char'), false);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9d48cf81-0f30-4f3d-ad7f-442ca4618c45",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9c28ebdd-0df0-4716-bba7-3471029fc64a",
+          "9d48cf81-0f30-4f3d-ad7f-442ca4618c45"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
