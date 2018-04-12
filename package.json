@@ -12,17 +12,20 @@
   ],
   "author": "huai.li",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-es2015-spread": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "babelrc-rollup": "^3.0.0",
     "chai": "^4.1.2",
+    "flow-bin": "^0.69.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.0.0",
     "mochawesome": "^3.0.2",

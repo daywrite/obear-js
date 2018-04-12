@@ -1,3 +1,4 @@
+// @flow
 /**
  * 表单验证类
  */
@@ -7,7 +8,7 @@ const reg = {
    * @param {Object} str 输入参数
    * @return {Boolean}
    */
-  isIngeter (str) {
+  isIngeter (str : string) : boolean {
     if (typeof str === 'boolean' || str === null) return false
 
     return Number.isInteger(Number(str))
@@ -18,7 +19,7 @@ const reg = {
    * @param  {Object} str 输入参数
    * @return {Boolean}
    */
-  isPositiveInteger (str) {
+  isPositiveInteger (str : string) : boolean {
     return /^\+?(?:0|[1-9]\d*)$/g.test(str)
   }
 }
