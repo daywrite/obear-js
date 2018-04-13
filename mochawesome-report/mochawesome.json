@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 5,
-    "passes": 5,
+    "suites": 4,
+    "tests": 6,
+    "passes": 6,
     "pending": 0,
     "failures": 0,
-    "start": "2018-02-12T08:04:18.779Z",
-    "end": "2018-02-12T08:04:19.105Z",
-    "duration": 326,
-    "testsRegistered": 5,
+    "start": "2018-04-13T08:59:21.179Z",
+    "end": "2018-04-13T08:59:21.469Z",
+    "duration": 290,
+    "testsRegistered": 6,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "ded2d940-b5d7-4433-9da4-c3e7acc2bf1a",
+    "uuid": "9b5489b0-1038-412d-90d4-e287ad0fce2b",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "5f38f134-058f-42fb-a6be-a2bb7ba5afbf",
+        "uuid": "1bb5ba88-69a9-405c-b338-e948a33e1a7c",
         "title": "api",
         "fullFile": "/Users/liming/MySource/tools/test/api.test.js",
         "file": "/test/api.test.js",
@@ -39,7 +39,7 @@
             "title": "get baidu information",
             "fullTitle": "api get baidu information",
             "timedOut": false,
-            "duration": 242,
+            "duration": 233,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -48,25 +48,25 @@
             "code": "request('https://www.baidu.com').get('/').expect(200).expect('Content-Type', /html/).end(function (err, res) {\n  expect(res).to.be.an('object');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "22321a66-f193-49b6-9e42-c83b731dfdb0",
+            "uuid": "35ef33f9-0fae-4b3c-bbb5-8c3d531ecb8f",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "22321a66-f193-49b6-9e42-c83b731dfdb0"
+          "35ef33f9-0fae-4b3c-bbb5-8c3d531ecb8f"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 242,
+        "duration": 233,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "13bce407-df69-40a2-8231-36fb6668fa5d",
+        "uuid": "6dc07315-67bb-4f70-bbe7-a8f517139770",
         "title": "regular.isIngeter",
         "fullFile": "/Users/liming/MySource/tools/test/regular.test.js",
         "file": "/test/regular.test.js",
@@ -86,7 +86,7 @@
             "code": "assert.equal(_index2.default.reg.isIngeter(undefined), false);\nassert.equal(_index2.default.reg.isIngeter(null), false);\nassert.equal(_index2.default.reg.isIngeter(false), false);\nassert.equal(_index2.default.reg.isIngeter(true), false);",
             "err": {},
             "isRoot": false,
-            "uuid": "fbab0f31-3f74-43e7-a4a2-8a9aebcf0a96",
+            "uuid": "6ce26e08-afa0-479c-b188-7e9a9b570563",
             "isHook": false,
             "skipped": false
           },
@@ -103,15 +103,15 @@
             "code": "assert.equal(_index2.default.reg.isIngeter(0), true);\nassert.equal(_index2.default.reg.isIngeter(-99999999), true);\nassert.equal(_index2.default.reg.isIngeter(999999999999999999999), true);",
             "err": {},
             "isRoot": false,
-            "uuid": "de43a261-305d-4bdd-81ba-48f455c53a8b",
+            "uuid": "3eabaefb-ec71-4b10-8fac-252fbf355841",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "fbab0f31-3f74-43e7-a4a2-8a9aebcf0a96",
-          "de43a261-305d-4bdd-81ba-48f455c53a8b"
+          "6ce26e08-afa0-479c-b188-7e9a9b570563",
+          "3eabaefb-ec71-4b10-8fac-252fbf355841"
         ],
         "failures": [],
         "pending": [],
@@ -122,7 +122,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "2a8aa73c-1c6c-42d5-8968-7b585b12abfa",
+        "uuid": "80e7e742-a9ea-4378-8f83-23bdf9d315fc",
         "title": "regular.isPositiveInteger",
         "fullFile": "/Users/liming/MySource/tools/test/regular.test.js",
         "file": "/test/regular.test.js",
@@ -142,7 +142,7 @@
             "code": "assert.equal(_index2.default.reg.isIngeter(undefined), false);\nassert.equal(_index2.default.reg.isIngeter(null), false);\nassert.equal(_index2.default.reg.isIngeter(false), false);\nassert.equal(_index2.default.reg.isIngeter(true), false);",
             "err": {},
             "isRoot": false,
-            "uuid": "9c28ebdd-0df0-4716-bba7-3471029fc64a",
+            "uuid": "ba625dfc-5c14-47db-b04c-d6f7490b2c8c",
             "isHook": false,
             "skipped": false
           },
@@ -159,15 +159,53 @@
             "code": "assert.equal(_index2.default.reg.isPositiveInteger(+0), true);\nassert.equal(_index2.default.reg.isPositiveInteger(0), true);\nassert.equal(_index2.default.reg.isPositiveInteger('+0'), true);\nassert.equal(_index2.default.reg.isPositiveInteger('0'), true);\nassert.equal(_index2.default.reg.isPositiveInteger('00'), false);\nassert.equal(_index2.default.reg.isPositiveInteger('char'), false);",
             "err": {},
             "isRoot": false,
-            "uuid": "9d48cf81-0f30-4f3d-ad7f-442ca4618c45",
+            "uuid": "f7dd1bb9-0891-4968-bc34-9544547d6827",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "9c28ebdd-0df0-4716-bba7-3471029fc64a",
-          "9d48cf81-0f30-4f3d-ad7f-442ca4618c45"
+          "ba625dfc-5c14-47db-b04c-d6f7490b2c8c",
+          "f7dd1bb9-0891-4968-bc34-9544547d6827"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "dcdf43e0-c75e-4ea9-8233-649935525946",
+        "title": "regular.isFloatWith2",
+        "fullFile": "/Users/liming/MySource/tools/test/regular.test.js",
+        "file": "/test/regular.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test right",
+            "fullTitle": "regular.isFloatWith2 test right",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "assert.equal(_index2.default.reg.isFloatWith2(+0), false);\nassert.equal(_index2.default.reg.isFloatWith2(+0), false);\nassert.equal(_index2.default.reg.isFloatWith2(0), false);\nassert.equal(_index2.default.reg.isFloatWith2('+0'), false);\nassert.equal(_index2.default.reg.isFloatWith2('0'), false);\nassert.equal(_index2.default.reg.isFloatWith2('00'), false);\nassert.equal(_index2.default.reg.isFloatWith2('0.'), false);\nassert.equal(_index2.default.reg.isFloatWith2('0.0'), true);\nassert.equal(_index2.default.reg.isFloatWith2('.0'), false);\nassert.equal(_index2.default.reg.isFloatWith2('1.011'), false);\nassert.equal(_index2.default.reg.isFloatWith2('1.01'), true);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9d981b2c-3a20-4eac-ab2e-3db3991d33d1",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9d981b2c-3a20-4eac-ab2e-3db3991d33d1"
         ],
         "failures": [],
         "pending": [],

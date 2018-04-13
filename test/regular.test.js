@@ -33,3 +33,19 @@ describe("regular.isPositiveInteger", () => {
     assert.equal(obear.reg.isPositiveInteger('char'), false)
   })
 })
+
+describe("regular.isFloatWith2", () => {
+  it('test right', function () {
+    assert.equal(obear.reg.isFloatWith2(+0), false)
+    assert.equal(obear.reg.isFloatWith2(+0), false)
+    assert.equal(obear.reg.isFloatWith2(0), false)
+    assert.equal(obear.reg.isFloatWith2('+0'), false)
+    assert.equal(obear.reg.isFloatWith2('0'), false)
+    assert.equal(obear.reg.isFloatWith2('00'), false)
+    assert.equal(obear.reg.isFloatWith2('0.'), false)
+    assert.equal(obear.reg.isFloatWith2('0.0'), true)
+    assert.equal(obear.reg.isFloatWith2('.0'), false)
+    assert.equal(obear.reg.isFloatWith2('1.011'), false)
+    assert.equal(obear.reg.isFloatWith2('1.01'), true)
+  })
+})
