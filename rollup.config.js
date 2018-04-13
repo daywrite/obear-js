@@ -1,8 +1,8 @@
-import babel from 'rollup-plugin-babel';
-import babelrc from 'babelrc-rollup';
+import babel from 'rollup-plugin-babel'
+import babelrc from 'babelrc-rollup'
 
-let pkg = require('./package.json');
-let external = Object.keys(pkg.dependencies);
+let pkg = require('./package.json')
+let external = Object.keys(pkg.dependencies)
 
 export default {
   input: 'src/index.js',
@@ -11,11 +11,11 @@ export default {
   ],
   external: external,
   output: [
-   {
+    {
       file: pkg.main,
       format: 'umd',
       name: 'obear',
       sourcemap: true
     }
   ]
-};
+}

@@ -1,6 +1,6 @@
 import obear from '../src/index'
 import chai from 'chai'
-let expect = chai.expect
+// let expect = chai.expect
 let assert = chai.assert
 
 describe("regular.isIngeter", () => {
